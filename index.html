@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Band</title>
+    <link rel="stylesheet" href="./assets/resetcss.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar">
+        <ul>
+          <li class="navbar-item">
+            <a href="#"> HOME </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#band"> BAND </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#tour"> TOUR </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#contact"> CONTACT </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#map">
+              MORE
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ul class="subnav">
+              <li class="subnav-item">
+                <a href="">Merchandise</a>
+              </li>
+              <li class="subnav-item">
+                <a href="">Extras</a>
+              </li>
+              <li class="subnav-item">
+                <a href="">Media</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div id="mobile-menu" class="mobile-menu-btn" onclick="showNav()">
+          <i class="mobile-menu-icon fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar-search">
+          <i class="navbar-search-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+      </nav>
+  
+      <header class="header">
+        <img class="header-image" src="./assets/img/la.jpg" alt="LA" />
+        <div class="header-text">
+          <h2>Los Angeles</h2>
+          <p>We had the best time playing at Venice Beach!</p>
+        </div>
+      </header>
+  
+      <div class="container">
+        <div id="band">
+          <h2 class="band-header">THE BAND</h2>
+          <p class="band-slogan">We love music</p>
+          <p class="band-description">
+            We have created a fictional band website. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+  
+          <div class="band-member">
+            <div class="band-member-item">
+              <p>Name</p>
+              <img src="./assets/img/bandmember.jpg" alt="band member" />
+            </div>
+            <div class="band-member-item">
+              <p>Name</p>
+              <img src="./assets/img/bandmember.jpg" alt="band member" />
+            </div>
+            <div class="band-member-item">
+              <p>Name</p>
+              <img src="./assets/img/bandmember.jpg" alt="band member" />
+            </div>
+          </div>
+        </div>
+  
+        <div id="tour">
+          <div class="content-tour">
+            <h2 class="tour-header">TOUR DATES</h2>
+            <p class="tour-slogan">Remember to book your tickets!</p>
+  
+            <div class="tour-ticket">
+              <div class="tour-ticket-time">
+                September
+                <span class="ticket-sold-out">Sold out</span>
+              </div>
+              <div class="tour-ticket-time">
+                October
+                <span class="ticket-sold-out">Sold out</span>
+              </div>
+              <div class="tour-ticket-time">
+                November
+                <span class="ticket-count">3</span>
+              </div>
+            </div>
+  
+            <div class="tour-place">
+              <div class="tour-place-item">
+                <img src="./assets/img/newyork.jpg" alt="New York" width="100%" />
+                <div class="tour-info">
+                  <h4>New York</h4>
+                  <p class="tour-info-time">Fri 27 Nov 2016</p>
+                  <p class="tour-info-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="btn buy-btn" onclick="showModal()">Buy Tickets</button>
+                </div>
+              </div>
+              <div class="tour-place-item">
+                <img src="./assets/img/paris.jpg" alt="Paris" width="100%" />
+                <div class="tour-info">
+                  <h4>Paris</h4>
+                  <p class="tour-info-time">Sat 28 Nov 2016</p>
+                  <p class="tour-info-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="btn buy-btn" onclick="showModal()">Buy Tickets</button>
+                </div>
+              </div>
+              <div class="tour-place-item">
+                <img
+                  src="./assets/img/sanfran.jpg"
+                  alt="San Francisco"
+                  width="100%"
+                />
+                <div class="tour-info">
+                  <h4>San Francisco</h4>
+                  <p class="tour-info-time">Sun 29 Nov 2016</p>
+                  <p class="tour-info-description">
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button class="btn buy-btn" onclick="showModal()">Buy Tickets</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div id="contact">
+          <h2 class="contact-header">CONTACT</h2>
+          <p class="contact-slogan">Fan? Drop a note!</p>
+  
+          <div class="row d-flex contact-content">
+            <div class="col col-half s-col-full contact-info">
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Chicago, US
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                Phone: +00 151515
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                Email: mail@mail.com
+              </p>
+            </div>
+            <form class="col col-half s-col-full contact-form">
+              <div class="row d-flex contact-form-name">
+                <div class="col col-half s-col-full">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    required
+                    class="form-control"
+                  />
+                </div>
+                <div class="col col-half s-col-full">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="row contact-form-email">
+                <div class="col col-full">
+                  <input
+                    type="text"
+                    placeholder="Message"
+                    required
+                    class="form-control-message"
+                  />
+                </div>
+              </div>
+              <button class="btn btn-submit">SEND</button>
+            </form>
+          </div>
+        </div>
+  
+        <div id="map">
+          <img src="./assets/img/map.jpg" alt="Map" width="100%" />
+        </div>
+      </div>
+  
+      <footer>
+        <div class="social-list">
+          <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+          <a href=""><i class="fa-brands fa-instagram-square"></i></a>
+          <a href=""><i class="fa-brands fa-snapchat"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p class="powered-by">Powered by <a href="http://hoangczh.tk/" target="_blank">CZH</a></p>
+      </footer>
+    </div>
+
+    <div class="modal modal-hidden" id="modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <div class="modal-header-text">
+            <i class="fa-solid fa-suitcase"></i>
+            Tickets
+          </div>
+          <div class="modal-header-close" onclick="hideModal()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+
+        <div class="modal-content">
+          <p>
+            <i class="fa-solid fa-cart-shopping"></i>
+            Tickets, $15 per persion
+          </p>
+          <input type="text" placeholder="How many?" id="howmany" class="modal-form-control">
+
+          <p>
+            <i class="fa-solid fa-user"></i>
+            Send to
+          </p>
+          <input type="email" placeholder="Enter email" id="email" class="modal-form-control">
+
+          <button class="modal-btn-pay">
+            PAY
+            <i class="fa-solid fa-check"></i>
+          </button>
+
+          <div class="modal-footer">
+            <button class="modal-btn-close" onclick="hideModal()">
+              Close
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <p>Need <a href="javascript:void(0)" class="modal-help">help?</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/9f5f531f9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
